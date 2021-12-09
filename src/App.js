@@ -12,7 +12,7 @@ import './App.css';
 
 //   'https://media2.giphy.com/media/xTk9ZwzuWiyJ8n5Vzq/200.webp?cid=ecf05e47bze80hu8c5g9a5rvyqfxbgma60zbety8cpy9geuz&rid=200.webp&ct=g'
 // ]
-const apiUrl = 'https://api.giphy.com/v1/gifs/search?api_key=F69twXBVXxe6k1TifOjhtNCw2um9deOg&q=panda&limit=10&offset=0&rating=g&lang=en'
+const apiUrl = 'https://api.giphy.com/v1/gifs/search?api_key=F69twXBVXxe6k1TifOjhtNCw2um9deOg&q=panda&limit=12&offset=0&rating=g&lang=en'
 
 function App() {
   const [gifs, setGifs] = useState([])
