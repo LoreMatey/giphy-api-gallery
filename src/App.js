@@ -24,8 +24,14 @@ function App() {
     <div className="App">
       <section className="App-content">
         {
-          gifs.map(gif => 
-            <img alt='musical gifs' src={gif} />)
+          gifs.map(gif => {
+            return (
+            <div key={gif.id}>
+              <h4>{gif.title}</h4>
+              <img alt={gif.title} src={gif.url} />
+            </div>
+            )
+          })
         }
       </section>
     </div>

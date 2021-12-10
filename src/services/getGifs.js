@@ -8,7 +8,11 @@ export default function getGifs ({ keyword = 'panda' } = {}) {
     .then(res => res.json())
     .then(response => {
       const {data = []} = response
-      const gifs = data.map(image => image.images.downsized_medium.url)
+      const gifs = data.map(image => {
+        const { title, id } = image
+        const { url } = image.images.downsized_medium
+        return { title, id, url }
+      })
       return gifs
     })
 }
