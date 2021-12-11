@@ -13,3 +13,13 @@
   color: white;
 }
 
+button {
+  background: linear-gradient(287deg, rgba(233,186,54,1) 0%, rgb(247, 60, 231) 100%, rgba(255,255,255,1) 100%);
+  font-size: 24px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+}

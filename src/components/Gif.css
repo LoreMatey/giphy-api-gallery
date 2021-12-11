@@ -1,0 +1,14 @@
+.gif-wrapper {
+  border: 1px solid rgb(248, 141, 164);
+  border-radius: 6px;
+  width: 500px;
+  margin: 10px;
+}
+
+.gif-image {
+  margin-bottom: 20PX;
+  max-width: 90%;
+  min-width: 400px;
+  
+  /* object-fit: fill; */
+}

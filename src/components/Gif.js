@@ -1,10 +1,11 @@
 import React from "react";
+import './Gif.css'
 
 export default function Gif ({ title, id, url }) {
   return (
-    <div key={id}>
-      <h4>{title}</h4>
-      <img alt={title} src={url} />
+    <div className='gif-wrapper' key={id} >
+      <p>{title}</p>
+      <img className='gif-image' alt={title} src={url} />
     </div>
   )
 }
