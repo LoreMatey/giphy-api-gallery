@@ -10,9 +10,9 @@ function App() {
       <section className="App-content">
         <h1>Welcome to your gallery of gifs</h1>
         <div className='links-wrapper'>
-          <Link className='links' to='/gif/panda'>Gifs de pandas</Link>
-          <Link to='/gif/penguin'>Gifs de pingüinos</Link>
-          <Link to='/gif/horseman'>Gifs de Bojack Horseman</Link>
+          <Link className='links' to='/gif/panda'>Panda gifs</Link>
+          <Link to='/gif/penguin'>Penguin gifs</Link>
+          <Link to='/gif/horseman'>Bojack Horseman gifs</Link>
         </div>
         
       {/* <button onClick={() => setKeyword('penguin')}>Change keyword</button> */}
