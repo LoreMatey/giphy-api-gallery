@@ -1,22 +1,25 @@
 import React from "react";
-import { useState, useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import getGifs from "../services/getGifs";
 import Gif from "./Gif";
 
-export default function GifsList ({ keyword }) {
+export default function GifsList ({params}) {
+  const {keyword} = params
+
   const [gifs, setGifs] = useState([])
 
   useEffect(function () {
     getGifs({ keyword })
-    .then(gifs => setGifs(gifs))
+      .then(gifs => setGifs(gifs))
   }, [keyword])
 
-  return gifs.map(gif => 
-    <Gif 
-      id={gif.id}
-      key={gif.id}
-      title={gif.title}
-      url={gif.url}
-    />
+  return gifs.map(({ id, title, url}) => 
+
+      <Gif 
+        id={id}
+        key={id}
+        title={title}
+        url={url}
+      />
   )
 }

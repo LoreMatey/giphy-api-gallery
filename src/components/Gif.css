@@ -3,6 +3,9 @@
   border-radius: 6px;
   width: 500px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gif-image {
@@ -11,4 +14,20 @@
   min-width: 400px;
   
   /* object-fit: fill; */
+}
+
+a {
+  background: linear-gradient(287deg, rgba(233,186,54,1) 0%, rgb(247, 60, 231) 100%, rgba(255,255,255,1) 100%);
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: #17191d;
+  align-self: flex-start;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
