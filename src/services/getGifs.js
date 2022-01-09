@@ -1,4 +1,4 @@
-const apiKey = 'F69twXBVXxe6k1TifOjhtNCw2um9deOg'
+const apiKey = process.env.REACT_APP_API_KEY
 
 export default function getGifs ({ keyword = 'panda' } = {}) {
 
